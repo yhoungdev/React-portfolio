@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #fff;
+    margin: 0;
+}
+
+
+//header 
+header { 
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    position: static;
+    top: 0;
+    height: 55px;
+    border: none;
+    box-shadow: 0px 0px 1px  grey;
+   
+    overflow: hidden;
+    
+    nav{
+        margin: 3px 15px 0 15px;
+        padding: 15px;
+        ul {
+            list-style-type: none;
+            display: flex;
+
+            
+            li{
+                margin-right: 15px;
+                
+            }
+
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+           
+        }
+      
+    }
+
+    span {
+        letter-spacing: 4px;
+        margin-left: 15px;
+        padding: 15px;
+        
+    }
+}
+
+.top-part {
+     width: 100%;
+     position: relative;
+    overflow: hidden;   
+    width: 100vw;
+     
+    height: 100vh;
+    .img-part {
+        margin-top: 10%;
+        img {
+            width: 30em;
+        }
+    }
+    
+    
+
+    .inner {
+        display: flex;
+        .info {
+            display: flex;
+            flex-direction: column;
+            margin:15% 10%;
+            font-size: 20px;
+        
+
+            h4 {
+                font-size: 40px;
+            }
+            h3{
+                font-size: 50px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 25px;
+            }
+
+           
+        }
+        button {
+            width: 10em;
+            height: 60px;
+            font-weight: bold;
+        }
+
+    }
+
+
+}
+  //container 
+  .container {
+    display: flex;
+
+   p{
+       font-size: 22px;
+       
+   }
+
+
+
+}
+
+
+//mobile 
+@media screen and (max-width:768px) {
+   
+    .top-part 
+    {
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+        }
+        .img-part {
+            display: none;
+            margin-top: 10%;
+            img {
+                width: 30em;
+            }
+    
+    }
+
+    .col-mob {
+        display: flex;
+        flex-direction: column;
+        margin-left: 9em;
+        color: red;
+    }
+
+  } 
+  .top-part{
+      padding: 0;
+      margin-top: 0;
+  }
+  .img-part {
+      display: none;
+  }
+  .img{
+      display: none;
+  }
+  footer {
+      display: none;
+  }
+}
